@@ -1,7 +1,4 @@
 import React from 'react'
-//import SocialMediaIcons  from "react-social-media-icons";
-//import {Navbar} from 'react-bootstrap'
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
@@ -13,21 +10,22 @@ import {
 function Footer(props) {
  
         return(
-            <div className=" container-fluid d-block bg-dark mt-3">
+            // eslint-disable-next-line react/style-prop-object
+            <div className=" container-fluid d-block  mt-3" style={{background : "linear-gradient(to right, #660033, #ff1a8c" }}>
                   <p className="text-white text-center p-1">Follow us</p>
-                  <div class="d-flex justify-content-center ">
+                  <div class="d-flex justify-content-center  ">
                         <a href="https://www.facebook.com/learnbuildteach/"
-                            className="facebook social p-2" >
-                            <FontAwesomeIcon icon={faFacebook} size="2x" />
+                            className="facebook social p-2  " >
+                            <FontAwesomeIcon icon={faFacebook} color="grey" size="2x" />
                         </a>
                         
                         <a href="https://www.twitter.com/jamesqquick" 
                             className="twitter social p-2">
-                            <FontAwesomeIcon icon={faTwitter} size="2x" />
+                            <FontAwesomeIcon icon={faTwitter} color="grey" size="2x" />
                         </a>
                         <a href="https://www.instagram.com/learnbuildteach"
                             className="instagram social p-2" >
-                            <FontAwesomeIcon icon={faInstagram} size="2x" /> 
+                            <FontAwesomeIcon icon={faInstagram} color="grey" size="2x" /> 
                         </a>
 
                   </div>
@@ -35,7 +33,7 @@ function Footer(props) {
 
                 
                
-                <p className="text-white text-center p-2">© Copyright 2019 Yoga.com </p>
+                <p className="text-white text-center p-2">© Copyright 2019 Meme.com </p>
             
             </div>
         
