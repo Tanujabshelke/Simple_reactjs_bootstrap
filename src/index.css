@@ -1,28 +1,29 @@
 
-/* Main */
-@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
-div {
-  margin: 0;
-  font-family:'Big Shoulders Text', cursive;
+* {
+  box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
 
 body {
-  font-family: 'Gugi', cursive;
   margin: 0;
   background-color: whitesmoke;
+  font-family : 'Big Shoulders Text', cursive;
 }
 
 header {
   height: 100px;
   display: flex;
   align-items: center;
-  background:#ff1a8c;  /* fallback for old browsers */
-  
-  background: -webkit-linear-gradient(to right, #660033,#ff1a8c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #660033,#ff1a8c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d3277d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #99004d, #d3277d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #99004d, #d3277d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+header > h1 {
+  color: whitesmoke;
+  font-size: 6vw;
+  margin:-10% 0 0 30%; 
+}
 
 .meme {
   position: relative;
@@ -31,8 +32,7 @@ header {
 }
 
 .meme > img {
-  width: 80vw;
-  height:80vh;
+  width: 100%;
 }
 
 .meme > h2 {
@@ -61,14 +61,11 @@ header {
 }
 
 .meme > .bottom {
-  bottom:0;
-  margin-bottom:-30%;
-  
+  bottom: 0;
 }
 
 .meme > .top {
   top: 0;
-  margin-top:-10%;
 }
 
 .meme-form {
@@ -80,32 +77,39 @@ header {
 
 .meme-form > input {
   width: 45%;
-  height:40px;
+  height: 40px;
+}
+
+.meme-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: #6441A5;
 }
 
 .meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 font-family: VT323, monospace;
-font-size: 110%;
+font-size: 25px;
 text-align: cen
 }
 .meme-form > input::-moz-placeholder { /* Firefox 19+ */
 font-family: VT323, monospace;
-font-size: 110%;
+font-size: 25px;
 text-align: cen
 }
 .meme-form > input:-ms-input-placeholder { /* IE 10+ */
 font-family: VT323, monospace;
-font-size: 110%;
+font-size: 25px;
 text-align: cen
 }
 .meme-form > input:-moz-placeholder { /* Firefox 18- */
 font-family: VT323, monospace;
-font-size: 40px;
+font-size: 25px;
 text-align: cen
 }
 /* STYLE FOR DRAGNDROP IMAGE*/
-
-
 .drop > h2 {
   position: absolute;
   width: 80%;
@@ -132,24 +136,15 @@ text-align: cen
 }
 
 .drop > .bottom {
-  
-  bottom: 0;
-  margin-bottom: -25%;
+  bottom : 0;
+  margin-bottom: -4rem;
   
 }
 
 .drop > .top {
   top: 0;
-  margin-top: 15rem
-  
+  margin-top: 15rem;
 }
-
-@media(max-width: 768px){
-  .drop > .bottom{
-    margin-bottom: -20%;
-  }
-}
-
 
 
 
