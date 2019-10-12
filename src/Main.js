@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Dropzone from "react-dropzone"
 
-class Main extends Component {
+class Meme extends Component {
     constructor(props) {
                 super(props)
                 this.state = {
@@ -65,14 +65,14 @@ class Main extends Component {
                             {({ getRootProps, getInputProps }) => (
                                 <div {...getRootProps()} className="">
                                     <input {...getInputProps()} />
-                                    <div style={{ padding: "15px",backgroundColor: "#bababa", border: "2px dashed black",textAlign:"center"}}>
+                                    <div className="container-fluid" style={{ margin:"2px",backgroundColor: "#bababa", border: "2px dashed black",textAlign:"center",padding:"2%" }}>
                                         Drop your image here
 
                                         {dropzone.map(imgs => (
                                         <img
                                             src={imgs.preview}
                                             alt={imgs.path}
-                                            style={{ width: "100%", height: "100%", padding : "1%" }}
+                                            style={{ width: "60vw", height: "80vh",position:"center" ,marginLeft:"-18%" }}
                                         />
                                         ))}
                                     </div>
