@@ -33,7 +33,7 @@ function Footer(props) {
 
                 
                
-                <p className="text-white text-center p-2">© Copyright 2019 Meme.com </p>
+                <p className="text-white text-center p-2">© Copyright 2019 Meme Generator.com </p>
             
             </div>
         
